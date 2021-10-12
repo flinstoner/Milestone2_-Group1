@@ -51,6 +51,12 @@ namespace Milestone2__Group1.UI_Layer
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnView = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +64,7 @@ namespace Milestone2__Group1.UI_Layer
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 98);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(491, 293);
@@ -85,16 +91,16 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(518, 339);
+            this.btnSearch.Location = new System.Drawing.Point(425, 69);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.Size = new System.Drawing.Size(78, 23);
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(599, 339);
+            this.btnUpdate.Location = new System.Drawing.Point(599, 397);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 4;
@@ -103,7 +109,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(680, 339);
+            this.btnDelete.Location = new System.Drawing.Point(680, 397);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 5;
@@ -112,7 +118,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(607, 69);
+            this.textBox1.Location = new System.Drawing.Point(606, 98);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(146, 23);
             this.textBox1.TabIndex = 6;
@@ -120,7 +126,7 @@ namespace Milestone2__Group1.UI_Layer
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(518, 72);
+            this.label2.Location = new System.Drawing.Point(517, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 15);
             this.label2.TabIndex = 7;
@@ -128,7 +134,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(607, 98);
+            this.textBox2.Location = new System.Drawing.Point(606, 127);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(146, 23);
             this.textBox2.TabIndex = 8;
@@ -136,7 +142,7 @@ namespace Milestone2__Group1.UI_Layer
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(518, 101);
+            this.label3.Location = new System.Drawing.Point(517, 130);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 15);
             this.label3.TabIndex = 9;
@@ -154,7 +160,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(607, 127);
+            this.textBox3.Location = new System.Drawing.Point(607, 199);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(146, 23);
             this.textBox3.TabIndex = 11;
@@ -162,7 +168,7 @@ namespace Milestone2__Group1.UI_Layer
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(518, 130);
+            this.label5.Location = new System.Drawing.Point(518, 202);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 15);
             this.label5.TabIndex = 12;
@@ -170,7 +176,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(619, 156);
+            this.textBox4.Location = new System.Drawing.Point(618, 228);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(134, 23);
             this.textBox4.TabIndex = 13;
@@ -178,7 +184,7 @@ namespace Milestone2__Group1.UI_Layer
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(518, 159);
+            this.label6.Location = new System.Drawing.Point(517, 231);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(95, 15);
             this.label6.TabIndex = 14;
@@ -186,7 +192,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(619, 185);
+            this.textBox5.Location = new System.Drawing.Point(618, 257);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(134, 23);
             this.textBox5.TabIndex = 15;
@@ -194,7 +200,7 @@ namespace Milestone2__Group1.UI_Layer
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(518, 188);
+            this.label7.Location = new System.Drawing.Point(518, 260);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 15);
             this.label7.TabIndex = 16;
@@ -203,7 +209,7 @@ namespace Milestone2__Group1.UI_Layer
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(518, 217);
+            this.label8.Location = new System.Drawing.Point(518, 289);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 15);
             this.label8.TabIndex = 17;
@@ -211,7 +217,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(619, 214);
+            this.textBox6.Location = new System.Drawing.Point(619, 286);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(133, 23);
             this.textBox6.TabIndex = 18;
@@ -219,7 +225,7 @@ namespace Milestone2__Group1.UI_Layer
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(518, 244);
+            this.label9.Location = new System.Drawing.Point(518, 315);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(84, 15);
             this.label9.TabIndex = 19;
@@ -227,7 +233,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(619, 243);
+            this.pictureBox1.Location = new System.Drawing.Point(619, 315);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 76);
             this.pictureBox1.TabIndex = 20;
@@ -243,11 +249,72 @@ namespace Milestone2__Group1.UI_Layer
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(96, 73);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(149, 15);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Search by Student Number";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(251, 69);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(159, 23);
+            this.textBox7.TabIndex = 23;
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(518, 397);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.TabIndex = 24;
+            this.btnInsert.Text = "Insert";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            // 
+            // btnView
+            // 
+            this.btnView.Location = new System.Drawing.Point(428, 397);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(75, 23);
+            this.btnView.TabIndex = 25;
+            this.btnView.Text = "View All";
+            this.btnView.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(517, 161);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(45, 15);
+            this.label11.TabIndex = 26;
+            this.label11.Text = "Gender";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.comboBox1.Location = new System.Drawing.Point(607, 156);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(145, 23);
+            this.comboBox1.TabIndex = 27;
+            // 
             // StudentData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(765, 374);
+            this.ClientSize = new System.Drawing.Size(765, 428);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.btnView);
+            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);
@@ -305,5 +372,11 @@ namespace Milestone2__Group1.UI_Layer
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
