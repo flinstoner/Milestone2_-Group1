@@ -30,6 +30,8 @@ namespace Milestone2__Group1.UI_Layer
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+            new RegForm().Close();
+            new LogForm().Close();
             
         }
 

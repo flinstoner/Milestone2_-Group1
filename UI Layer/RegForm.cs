@@ -19,7 +19,7 @@ namespace Milestone2__Group1.UI_Layer
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            //new UI_Layer.LogForm().Show();
+            new LogForm().Show();
             this.Hide();
         }
 
