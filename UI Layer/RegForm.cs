@@ -35,7 +35,7 @@ namespace Milestone2__Group1.UI_Layer
 
         private void btnReg_Click(object sender, EventArgs e)
         {
-            if (txtName.Text == "" || txtNum.Text == "" || txtDoB.Text == "" || cmbGen.Text == "" || txtxNr.Text == "" || cmbMC.Text == "" )
+            if (txtName.Text == "" || txtPass.Text == "" || txtCPass.Text == "")
             {
                 MessageBox.Show("All fields must be filled before registry.");
             }
