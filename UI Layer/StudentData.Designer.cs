@@ -152,7 +152,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(518, 19);
+            this.label4.Location = new System.Drawing.Point(517, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(180, 23);
             this.label4.TabIndex = 10;
