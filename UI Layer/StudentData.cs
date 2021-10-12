@@ -32,5 +32,10 @@ namespace Milestone2__Group1.UI_Layer
             this.Close();
             
         }
+
+        private void cmbMCodes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
