@@ -50,5 +50,10 @@ namespace Milestone2__Group1.UI_Layer
         {
 
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
