@@ -69,5 +69,15 @@ namespace Milestone2__Group1
             new UI_Layer.RegForm().Show();
             this.Hide();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
