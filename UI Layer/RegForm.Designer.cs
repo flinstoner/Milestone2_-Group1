@@ -40,7 +40,7 @@ namespace Milestone2__Group1.UI_Layer
             this.txtCPass = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -139,12 +139,12 @@ namespace Milestone2__Group1.UI_Layer
             this.label1.TabIndex = 24;
             this.label1.Text = "Username";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 132);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 23);
-            this.textBox1.TabIndex = 25;
+            this.txtName.Location = new System.Drawing.Point(146, 132);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(152, 23);
+            this.txtName.TabIndex = 25;
             // 
             // pictureBox1
             // 
@@ -184,7 +184,7 @@ namespace Milestone2__Group1.UI_Layer
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtPass);
@@ -216,7 +216,7 @@ namespace Milestone2__Group1.UI_Layer
         private System.Windows.Forms.TextBox txtCPass;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
