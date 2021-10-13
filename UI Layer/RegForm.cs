@@ -13,7 +13,7 @@ namespace Milestone2__Group1.UI_Layer
 {
     public partial class RegForm : Form
     {
-        FileHandler Users = new FileHandler();
+        
         public RegForm()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace Milestone2__Group1.UI_Layer
 
         private void btnReg_Click(object sender, EventArgs e)
         {
-            if (Users.Register(txtName.Text, txtPass.Text) == "True")
+            if (file.Register(txtName.Text, txtPass.Text) == "True")
             {
                 MessageBox.Show("Regsitered Successfully");
             }
