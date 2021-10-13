@@ -87,7 +87,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // btnReg
             // 
-            this.btnReg.Location = new System.Drawing.Point(27, 279);
+            this.btnReg.Location = new System.Drawing.Point(27, 249);
             this.btnReg.Name = "btnReg";
             this.btnReg.Size = new System.Drawing.Size(125, 28);
             this.btnReg.TabIndex = 17;
@@ -97,11 +97,11 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(173, 279);
+            this.btnCancel.Location = new System.Drawing.Point(173, 249);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(125, 28);
             this.btnCancel.TabIndex = 18;
-            this.btnCancel.Text = "Cancel";
+            this.btnCancel.Text = "Log In";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
