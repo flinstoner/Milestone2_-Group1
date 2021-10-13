@@ -35,23 +35,23 @@ namespace Milestone2__Group1.UI_Layer
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDOB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtStno = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtStNumber = new System.Windows.Forms.TextBox();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -97,6 +97,7 @@ namespace Milestone2__Group1.UI_Layer
             this.btnSearch.TabIndex = 3;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnUpdate
             // 
@@ -106,6 +107,7 @@ namespace Milestone2__Group1.UI_Layer
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -115,13 +117,14 @@ namespace Milestone2__Group1.UI_Layer
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(606, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 23);
-            this.textBox1.TabIndex = 6;
+            this.txtName.Location = new System.Drawing.Point(606, 98);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(146, 23);
+            this.txtName.TabIndex = 6;
             // 
             // label2
             // 
@@ -132,12 +135,12 @@ namespace Milestone2__Group1.UI_Layer
             this.label2.TabIndex = 7;
             this.label2.Text = "Name";
             // 
-            // textBox2
+            // txtSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(606, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(146, 23);
-            this.textBox2.TabIndex = 8;
+            this.txtSurname.Location = new System.Drawing.Point(606, 127);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(146, 23);
+            this.txtSurname.TabIndex = 8;
             // 
             // label3
             // 
@@ -158,28 +161,28 @@ namespace Milestone2__Group1.UI_Layer
             this.label4.TabIndex = 10;
             this.label4.Text = "Student Information";
             // 
-            // textBox3
+            // txtDOB
             // 
-            this.textBox3.Location = new System.Drawing.Point(606, 185);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 23);
-            this.textBox3.TabIndex = 11;
+            this.txtDOB.Location = new System.Drawing.Point(606, 185);
+            this.txtDOB.Name = "txtDOB";
+            this.txtDOB.Size = new System.Drawing.Size(146, 23);
+            this.txtDOB.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(518, 188);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 15);
+            this.label5.Size = new System.Drawing.Size(31, 15);
             this.label5.TabIndex = 12;
-            this.label5.Text = "DoB";
+            this.label5.Text = "DOB";
             // 
-            // textBox4
+            // txtStno
             // 
-            this.textBox4.Location = new System.Drawing.Point(617, 214);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(135, 23);
-            this.textBox4.TabIndex = 13;
+            this.txtStno.Location = new System.Drawing.Point(617, 214);
+            this.txtStno.Name = "txtStno";
+            this.txtStno.Size = new System.Drawing.Size(135, 23);
+            this.txtStno.TabIndex = 13;
             // 
             // label6
             // 
@@ -190,12 +193,12 @@ namespace Milestone2__Group1.UI_Layer
             this.label6.TabIndex = 14;
             this.label6.Text = "Student Number";
             // 
-            // textBox5
+            // txtPhone
             // 
-            this.textBox5.Location = new System.Drawing.Point(617, 243);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(135, 23);
-            this.textBox5.TabIndex = 15;
+            this.txtPhone.Location = new System.Drawing.Point(617, 243);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(135, 23);
+            this.txtPhone.TabIndex = 15;
             // 
             // label7
             // 
@@ -251,12 +254,12 @@ namespace Milestone2__Group1.UI_Layer
             this.label10.TabIndex = 22;
             this.label10.Text = "Search by Student Number";
             // 
-            // textBox7
+            // txtStNumber
             // 
-            this.textBox7.Location = new System.Drawing.Point(251, 69);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(159, 23);
-            this.textBox7.TabIndex = 23;
+            this.txtStNumber.Location = new System.Drawing.Point(251, 69);
+            this.txtStNumber.Name = "txtStNumber";
+            this.txtStNumber.Size = new System.Drawing.Size(159, 23);
+            this.txtStNumber.TabIndex = 23;
             // 
             // btnInsert
             // 
@@ -266,6 +269,7 @@ namespace Milestone2__Group1.UI_Layer
             this.btnInsert.TabIndex = 24;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnView
             // 
@@ -275,6 +279,7 @@ namespace Milestone2__Group1.UI_Layer
             this.btnView.TabIndex = 25;
             this.btnView.Text = "View All";
             this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // label11
             // 
@@ -301,9 +306,13 @@ namespace Milestone2__Group1.UI_Layer
             // 
             this.cmbMCodes.FormattingEnabled = true;
             this.cmbMCodes.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
+            "PRG281",
+            "MAT281",
+            "SEN381",
+            "SAD281",
+            "STA281",
+            "PMM281",
+            "DBD281"});
             this.cmbMCodes.Location = new System.Drawing.Point(617, 272);
             this.cmbMCodes.Name = "cmbMCodes";
             this.cmbMCodes.Size = new System.Drawing.Size(135, 23);
@@ -320,23 +329,23 @@ namespace Milestone2__Group1.UI_Layer
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btnView);
             this.Controls.Add(this.btnInsert);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtStNumber);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtStno);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtDOB);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSearch);
@@ -362,23 +371,23 @@ namespace Milestone2__Group1.UI_Layer
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDOB;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtStno;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtStNumber;
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Label label11;
