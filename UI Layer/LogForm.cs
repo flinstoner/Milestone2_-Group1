@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Milestone2__Group1.BusinessLogic_Layer;
+using Milestone2__Group1.UI_Layer;
 
 namespace Milestone2__Group1
 {
     public partial class LogForm : Form
     {
+        FileHandler Users = new FileHandler();
         public LogForm()
         {
             InitializeComponent();
@@ -44,17 +47,11 @@ namespace Milestone2__Group1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtName.Text == "username" && txtPass.Text == "password")
+            if (Users.login(txtName.Text, txtPass.Text))
             {
-                new UI_Layer.StudentData().Show();
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Username and Password Incorrect!");
-                txtName.Clear();
-                txtPass.Clear();
-                txtName.Focus();
+                new StudentData().Show();
+                this.Close();
+
             }
         }
 
