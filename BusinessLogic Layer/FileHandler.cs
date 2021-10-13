@@ -10,6 +10,11 @@ namespace Milestone2__Group1.BusinessLogic_Layer
     class FileHandler
     {
         //Define methods that will read and write to .txt file
-        private string path = AppDomain.CurrentDomain.BaseDirectory + "Login.txt"
+        private string path = AppDomain.CurrentDomain.BaseDirectory + "DataCapturers.txt";
+
+        public void checkFile()
+        { 
+
+        }
     }
 }

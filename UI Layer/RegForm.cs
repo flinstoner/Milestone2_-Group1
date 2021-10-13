@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Milestone2__Group1.BusinessLogic_Layer;
 
 namespace Milestone2__Group1.UI_Layer
 {
     public partial class RegForm : Form
     {
+        FileHandler Users = new FileHandler();
         public RegForm()
         {
             InitializeComponent();
@@ -35,14 +37,13 @@ namespace Milestone2__Group1.UI_Layer
 
         private void btnReg_Click(object sender, EventArgs e)
         {
-            if (txtName.Text == "" || txtPass.Text == "" || txtCPass.Text == "")
+            if (Users.Register(txtName.Text, txtPass.Text) == "True")
             {
-                MessageBox.Show("All fields must be filled before registry.");
+                MessageBox.Show("Regsitered Successfully");
             }
-            else if (txtPass.Text != txtCPass.Text)
+            else
             {
-                MessageBox.Show("Passwords do not match!"); 
-                txtCPass.Focus();
+                MessageBox.Show("Registration Failed, Please enter correct details!");
             }
         }
 
@@ -53,7 +54,8 @@ namespace Milestone2__Group1.UI_Layer
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            new LogForm().Show();
+            this.Close();
         }
     }
 }
