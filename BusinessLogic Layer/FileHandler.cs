@@ -52,7 +52,7 @@ namespace Milestone2__Group1.BusinessLogic_Layer
             checkFile();
             using (StreamWriter file = File.AppendText(users))
             {
-                file.WriteLine(user + ',' + pass);
+                file.WriteLine(user+','+pass);
             }
             return "True";
         }

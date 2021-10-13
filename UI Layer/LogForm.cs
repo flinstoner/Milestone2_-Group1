@@ -49,9 +49,14 @@ namespace Milestone2__Group1
         {
             if (Users.login(txtName.Text, txtPass.Text))
             {
-                new StudentData().Show();
+                StudentData login = new StudentData();
                 this.Close();
+                login.Show();
 
+            }
+            else
+            {
+                MessageBox.Show("Username and Password Incorrect!");
             }
         }
 

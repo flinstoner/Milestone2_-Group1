@@ -57,6 +57,7 @@ namespace Milestone2__Group1.UI_Layer
             this.label11 = new System.Windows.Forms.Label();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.cmbMCodes = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -273,7 +274,7 @@ namespace Milestone2__Group1.UI_Layer
             // 
             // btnView
             // 
-            this.btnView.Location = new System.Drawing.Point(428, 397);
+            this.btnView.Location = new System.Drawing.Point(12, 397);
             this.btnView.Name = "btnView";
             this.btnView.Size = new System.Drawing.Size(75, 23);
             this.btnView.TabIndex = 25;
@@ -319,11 +320,22 @@ namespace Milestone2__Group1.UI_Layer
             this.cmbMCodes.TabIndex = 28;
             this.cmbMCodes.SelectedIndexChanged += new System.EventHandler(this.cmbMCodes_SelectedIndexChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(398, 397);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Register Module";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // StudentData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(765, 428);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbMCodes);
             this.Controls.Add(this.cmbGender);
             this.Controls.Add(this.label11);
@@ -393,5 +405,6 @@ namespace Milestone2__Group1.UI_Layer
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cmbGender;
         private System.Windows.Forms.ComboBox cmbMCodes;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Milestone2__Group1.UI_Layer;
 
 namespace Milestone2__Group1.UI_Layer
 {
@@ -132,6 +133,12 @@ namespace Milestone2__Group1.UI_Layer
                 //MessageBox.Show(ex.Message);
                 MessageBox.Show("Something went wrong, please ensure that your student number is filled in");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            new Modules().Show();
         }
     }
 }
